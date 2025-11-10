@@ -12,7 +12,7 @@ AMOUNT_OF_PATTERNS = 10
 class GameOfLifeApp:
     def __init__(self, master: tk.Tk):
         self.master = master
-        self.master.title("Lev's Conway's Game of Life")
+        self.master.title("Lev's Game of Life")
 
         self.controller = GameController(GRID_ROWS, GRID_COLS)
         self.running = False

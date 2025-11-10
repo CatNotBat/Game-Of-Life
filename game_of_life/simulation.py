@@ -25,13 +25,13 @@ class GameOfLifeSimulation:
 
                 if cell_state == 1:
                     if live_neighbors < 2 or live_neighbors > 3:
-                        new_board.board[row][col] = 0
+                        new_board.set_cell(row, col, 0)
                     else:
-                        new_board.board[row][col] = 1
+                        new_board.set_cell(row, col, 1)
 
                 else:
                     if live_neighbors == 3:
-                        new_board.board[row][col] = 1
+                        new_board.set_cell(row, col, 1)
         self.board = new_board
 
     def _random_pattern(self):

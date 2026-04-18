@@ -1,4 +1,4 @@
-MAX_PATTERTN_SIZE = 10
+MAX_PATTERN_SIZE = 10
 
 
 def get_glider_pattern():

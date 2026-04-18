@@ -1,5 +1,5 @@
 from board import GameOfLifeBoard
-from patterns import MAX_PATTERTN_SIZE, PRESET_PATTERNS
+from patterns import MAX_PATTERN_SIZE, PRESET_PATTERNS
 import random
 
 
@@ -12,8 +12,8 @@ class GameOfLifeSimulation:
         for _ in range(amount_of_patterns):
             self._apply_pattern(
                 self._random_pattern(),
-                random.randint(0, self.board.rows - MAX_PATTERTN_SIZE),
-                random.randint(0, self.board.cols - MAX_PATTERTN_SIZE),
+                random.randint(0, self.board.rows - MAX_PATTERN_SIZE),
+                random.randint(0, self.board.cols - MAX_PATTERN_SIZE),
             )
 
     def step(self):
